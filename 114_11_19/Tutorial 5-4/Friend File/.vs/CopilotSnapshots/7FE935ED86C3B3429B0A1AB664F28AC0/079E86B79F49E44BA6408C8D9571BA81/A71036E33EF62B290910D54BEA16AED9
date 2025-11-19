@@ -1,0 +1,120 @@
+﻿namespace Friend_File
+{
+    partial class Form1
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.promptLabel = new System.Windows.Forms.Label();
+            this.nameTextBox = new System.Windows.Forms.TextBox();
+            this.writeNameButton = new System.Windows.Forms.Button();
+            this.exitButton = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // 以下註解為繁體中文詳細說明：
+            // 我們將所有元件的顯示文字改為繁體中文，並設定字型為微軟正黑體（Microsoft JhengHei），
+            // 字型大小統一設為 18pt，以提升在介面上的可讀性。僅修改文字與字型大小，其他屬性不變。
+            // 
+            // promptLabel
+            // 顯示提示使用者輸入朋友姓名的文字。已改為繁體中文。
+            this.promptLabel.AutoSize = true;
+            this.promptLabel.Location = new System.Drawing.Point(54, 122);
+            this.promptLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.promptLabel.Name = "promptLabel";
+            this.promptLabel.Size = new System.Drawing.Size(139, 18);
+            this.promptLabel.TabIndex = 0;
+            // 設定為繁體中文提示文字，包含全形冒號，增加可讀性
+            this.promptLabel.Text = "輸入朋友的名字：";
+            // 將標籤字型設定為微軟正黑體 18pt，常用於繁體中文顯示
+            this.promptLabel.Font = new System.Drawing.Font("Microsoft JhengHei", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            // 
+            // nameTextBox
+            // 用於輸入朋友名稱的文字方塊，將字型放大以利閱讀
+            this.nameTextBox.Location = new System.Drawing.Point(243, 111);
+            this.nameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nameTextBox.Name = "nameTextBox";
+            this.nameTextBox.Size = new System.Drawing.Size(228, 29);
+            this.nameTextBox.TabIndex = 1;
+            // 設定輸入欄位字型為微軟正黑體 18pt，方便使用者輸入與閱讀
+            this.nameTextBox.Font = new System.Drawing.Font("Microsoft JhengHei", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            // 
+            // writeNameButton
+            // 按鈕用來觸發寫入朋友名字的動作，文字改為繁體中文以清楚描述功能
+            this.writeNameButton.Location = new System.Drawing.Point(121, 346);
+            this.writeNameButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.writeNameButton.Name = "writeNameButton";
+            this.writeNameButton.Size = new System.Drawing.Size(173, 74);
+            this.writeNameButton.TabIndex = 2;
+            // 按鈕文字改為繁體中文「寫入名字」以表意明確
+            this.writeNameButton.Text = "寫入名字";
+            this.writeNameButton.UseVisualStyleBackColor = true;
+            // 將按鈕字型改為微軟正黑體 18pt，使按鈕文字清晰可讀
+            this.writeNameButton.Font = new System.Drawing.Font("Microsoft JhengHei", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.writeNameButton.Click += new System.EventHandler(this.writeNameButton_Click);
+            // 
+            // exitButton
+            // 按鈕用於結束或離開應用程式，文字改為繁體中文
+            this.exitButton.Location = new System.Drawing.Point(370, 346);
+            this.exitButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(161, 74);
+            this.exitButton.TabIndex = 3;
+            // 按鈕文字改為繁體中文「離開」，使用者閱讀習慣更親切
+            this.exitButton.Text = "離開";
+            this.exitButton.UseVisualStyleBackColor = true;
+            // 將按鈕字型改為微軟正黑體 18pt，使介面風格一致
+            this.exitButton.Font = new System.Drawing.Font("Microsoft JhengHei", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            // 
+            // Form1
+            // 視窗本體的預設字型也改為微軟正黑體 18pt，以確保子元件繼承一致的字型大小
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(810, 496);
+            this.Controls.Add(this.exitButton);
+            this.Controls.Add(this.writeNameButton);
+            this.Controls.Add(this.nameTextBox);
+            this.Controls.Add(this.promptLabel);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "Form1";
+            // 視窗標題改為繁體中文，描述應用程式用途
+            this.Text = "朋友檔案";
+            // 設定視窗預設字型為微軟正黑體 18pt，讓未單獨設定字型的子元件也能一致顯示
+            this.Font = new System.Drawing.Font("Microsoft JhengHei", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label promptLabel;
+        private System.Windows.Forms.TextBox nameTextBox;
+        private System.Windows.Forms.Button writeNameButton;
+        private System.Windows.Forms.Button exitButton;
+    }
+}
+
